@@ -33,5 +33,5 @@ jobs:
           git config --local user.name github-actions[bot]
           git config --local user.email 83289881+github-actions[bot]@users.noreply.github.com
           python main.py -i -P -k ${{ secrets.KEY }}
-          python apps.py -r ${{ github.event.inputs.repo || 'https://github.com/isKoi/Manifest-AutoUpdate' }} -o data
+          python apps.py -r ${{ github.event.inputs.repo || 'https://github.com/satisl/MAU' }} -o data
           python push.py
